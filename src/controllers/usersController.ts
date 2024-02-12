@@ -131,8 +131,6 @@ export const changeUser = async (
   },
   id?: string,
 ) => {
-  const idx = users.findIndex(item => item.id === id)
-
   const userIndex = users.findIndex(item => item.id === id)
   const check = uuidValidate(id || '')
   let body = ''
